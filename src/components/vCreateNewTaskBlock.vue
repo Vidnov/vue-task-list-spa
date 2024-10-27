@@ -14,7 +14,7 @@ const textButton = computed(() => {
     <v-form validate-on="submit lazy" @submit.prevent="tasksStore.actionTask">
       <v-text-field
         v-model="tasksStore.task.title"
-        label="Введите задачу"
+        label="Опишите задачу"
       ></v-text-field>
 
       <v-btn

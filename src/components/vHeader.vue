@@ -25,7 +25,7 @@ const showCreateNewTaskBlock = () => {
     <v-toolbar-title>
       <v-badge :content="tasksStore.tasks.length">ToDo List</v-badge>
     </v-toolbar-title>
-    <v-text-field v-show="isShowInput" label="Название таски" variant="underlined"
+    <v-text-field v-show="isShowInput" label="Введите название задачи для поиска" variant="underlined"
                   v-model="searchString"></v-text-field>
     <v-btn icon="comment" @click="showCreateNewTaskBlock()"></v-btn>
     <v-btn icon="search" @click="showInput()"></v-btn>
